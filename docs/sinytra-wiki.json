@@ -1,5 +1,9 @@
 {
   "id": "millager",
+  "platforms": {
+    "curseforge": "millager",
+    "modrinth": "millager"
+  },
   "modid": "millager",
   "owners": [ "lzyzl6" ],
   "licenses": {
