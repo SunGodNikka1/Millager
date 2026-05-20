@@ -10,8 +10,5 @@
     "project": {
       "id": "MIT"
     }
-  },
-  "versions": {
-    "1.21.11": "main"
   }
 }
