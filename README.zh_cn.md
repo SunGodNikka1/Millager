@@ -1,8 +1,9 @@
 #  戍卫村民
 
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.21.11-62b47a?style=flat-square)
-![Fabric](https://img.shields.io/badge/Fabric_Loader-0.19.2-b8c0cc?style=flat-square)
-![Version](https://img.shields.io/badge/版本-0.2.1--beta-e8a87c?style=flat-square)
+![Fabric](https://img.shields.io/badge/Fabric-0.19.2-b8c0cc?style=flat-square)
+![NeoForge](https://img.shields.io/badge/NeoForge-21.11.42-bac92c?style=flat-square)
+![Version](https://img.shields.io/badge/版本-0.2.2--beta-e8a87c?style=flat-square)
 ![License](https://img.shields.io/badge/许可证-MIT-a8d8a8?style=flat-square)
 ![Environment](https://img.shields.io/badge/环境-客户端_%26_服务端-7ec8e3?style=flat-square)
 
