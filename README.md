@@ -1,11 +1,9 @@
 # Millager
 
-![Minecraft](https://img.shields.io/badge/Minecraft-1.21.11-62b47a?style=flat-square)
-![Fabric](https://img.shields.io/badge/Fabric-0.19.2-b8c0cc?style=flat-square)
-![NeoForge](https://img.shields.io/badge/NeoForge-21.11.42-bac92c?style=flat-square)
-![Version](https://img.shields.io/badge/Version-0.3.0--beta-e8a87c?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-a8d8a8?style=flat-square)
-![Environment](https://img.shields.io/badge/Environment-Client_%26_Srever-7ec8e3?style=flat-square)
+[![Minecraft](https://img.shields.io/modrinth/game-versions/millager?style=flat-square&label=Minecraft&color=62b47a)](https://modrinth.com/mod/millager/versions)
+![Loaders](https://img.shields.io/badge/Loaders-Fabric_%7C_NeoForge-bac92c?style=flat-square)
+[![Version](https://img.shields.io/modrinth/v/millager?style=flat-square&label=Version&color=e8a87c)](https://modrinth.com/mod/millager/versions)
+![Environment](https://img.shields.io/badge/Environment-Client_%26_Server-7ec8e3?style=flat-square)
 
 > *"Millager — a portmanteau of militia and villager — refers to the armed defenders who stand between a village and everything that wants to burn it down."*
 

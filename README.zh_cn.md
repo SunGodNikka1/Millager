@@ -1,10 +1,8 @@
 #  戍卫村民
 
-![Minecraft](https://img.shields.io/badge/Minecraft-1.21.11-62b47a?style=flat-square)
-![Fabric](https://img.shields.io/badge/Fabric-0.19.2-b8c0cc?style=flat-square)
-![NeoForge](https://img.shields.io/badge/NeoForge-21.11.42-bac92c?style=flat-square)
-![Version](https://img.shields.io/badge/版本-0.3.0--beta-e8a87c?style=flat-square)
-![License](https://img.shields.io/badge/许可证-MIT-a8d8a8?style=flat-square)
+[![Minecraft](https://img.shields.io/modrinth/game-versions/millager?style=flat-square&label=Minecraft&color=62b47a)](https://modrinth.com/mod/millager/versions)
+![Loaders](https://img.shields.io/badge/加载器-Fabric_%7C_NeoForge-bac92c?style=flat-square)
+[![Version](https://img.shields.io/modrinth/v/millager?style=flat-square&label=%E7%89%88%E6%9C%AC&color=e8a87c)](https://modrinth.com/mod/millager/versions)
 ![Environment](https://img.shields.io/badge/环境-客户端_%26_服务端-7ec8e3?style=flat-square)
 
 > *"Millager——militia（民兵）与 villager（村民）的合成词——指的是守卫在村庄与灾厄威胁之间的武装村民们。"*
