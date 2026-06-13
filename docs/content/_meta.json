@@ -1,0 +1,14 @@
+{
+    "items": {
+        "name": "Items",
+        "icon": "Sword"
+    },
+    "blocks": {
+        "name": "Blocks",
+        "icon": "Box"
+    },
+    "entities": {
+        "name": "Entities",
+        "icon": "Users"
+    }
+}

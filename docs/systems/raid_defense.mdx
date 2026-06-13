@@ -1,0 +1,80 @@
+# Raid Defense
+
+When a village is raided, Millager reinforcements automatically deploy in **alternating waves** of cavalry and infantry. A green boss bar tracks the reinforcement progress.
+
+## How It Works
+
+Once at least one raid group has spawned, the defense system initializes:
+
+1. A **timer** counts down based on difficulty and village size
+2. At zero, a wave of Millagers spawns near the village center
+3. Waves alternate: **cavalry** (Lancer/Scouter) on odd waves, **infantry** (Archer/Swordmaster/Mauler/Rioter/Doctor) on even waves
+4. Up to **11 waves** total; after the 11th, defense is "fully deployed"
+
+## Timer Formula
+
+```
+maxTimer = clamp(2100 - beds × 175 + lastWaveHp, 1400, 6300)
+```
+
+- **More beds** in the village → faster reinforcements (more villagers to protect)
+- **Higher total HP** from the last wave → longer wait for the next wave
+
+### Actual Wait Times
+
+| Difficulty | Decrement | Wait Range |
+|------------|-----------|------------|
+| Easy | 4/tick | 17s – 1m 19s |
+| Normal | 2/tick | 35s – 2m 37s |
+| Hard | 1/tick | 1m 10s – 5m 15s |
+
+## Wave Composition
+
+**Cavalry Pool (odd waves):**
+
+| Unit | Health | Weight |
+|------|--------|--------|
+| Lancer | 28 HP | 60 |
+| Scouter | 26 HP | 40 |
+
+**Infantry Pool (even waves):**
+
+| Unit | Health | Weight |
+|------|--------|--------|
+| Archer | 24 HP | 30 |
+| Swordmaster | 30 HP | 25 |
+| Mauler | 32 HP | 20 |
+| Rioter | 40 HP | 15 |
+| Doctor | 22 HP | 10 |
+
+## Wave Size
+
+| Wave | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11+ |
+|------|---|---|---|---|---|---|---|---|---|------|------|
+| Count | 3 | 5 | 7 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 15 |
+
+## Spawn Location
+
+Millagers prefer to spawn near the village **MEETING point** (bell square), then the raid's bounding box, and finally random positions within 32 blocks of the village center as a fallback.
+
+## Boss Bar
+
+The defense system displays a **green boss bar** alongside the vanilla red raid bar:
+
+- **"Reinforcements"** — timer counting down, progress filling up
+- **"Cavalry Deployed"** / **"Infantry Deployed"** — 5-second display after each wave
+- **"Forces Fully Deployed"** — permanent full bar after all 11 waves
+
+The boss bar only appears for players within the raid's active radius (same as the vanilla raid bar).
+
+## Persistence
+
+Defense state is saved per village (keyed by `center.asLong()`) in `millager_raids` data. State cleans up when the raid ends (victory, defeat, or expiration).
+
+## Grand Battle
+
+When a raid is **won** with all 11 waves deployed, all players in the raid radius earn the hidden **"War of the Century"** challenge advancement.
+
+## Game Rule
+
+Disable reinforcements: `/gamerule millager:raid_defenses false`

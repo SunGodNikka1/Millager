@@ -1,0 +1,31 @@
+# 游戏规则
+
+Millager添加了两条自定义游戏规则用于控制模组行为。两者默认均为`true`，可通过`/gamerule`命令切换。
+
+## `millager:spawn_millager_patrols`
+
+- **默认值：** `true`
+- **分类：** 生成
+- **作用：** 控制Millager巡逻队是否在野外自然生成
+
+```
+/gamerule millager:spawn_millager_patrols false
+```
+
+禁用此规则阻止所有野外巡逻生成。已有巡逻队不受影响——仅阻止新生成。指挥所巡逻和袭击增援也不受影响。
+
+## `millager:raid_defenses`
+
+- **默认值：** `true`
+- **分类：** 生物
+- **作用：** 控制村庄袭击时是否部署Millager援军
+
+```
+/gamerule millager:raid_defenses false
+```
+
+禁用此规则阻止所有袭击增援部署。若在袭击中途禁用，当前增援状态将被清理。对正在进行的袭击重新启用无效。
+
+## 原版依赖
+
+巡逻系统同时遵循原版`doMobSpawning`游戏规则（`/gamerule doMobSpawning`）。如果全局生物生成被禁用，即使Millager专属规则开启，巡逻也不会生成。

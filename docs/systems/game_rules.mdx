@@ -1,0 +1,31 @@
+# Game Rules
+
+Millager adds two custom game rules for controlling mod behavior. Both default to `true` and can be toggled via the `/gamerule` command.
+
+## `millager:spawn_millager_patrols`
+
+- **Default:** `true`
+- **Category:** Spawning
+- **Effect:** Controls whether Millager patrols spawn naturally in the wilderness
+
+```
+/gamerule millager:spawn_millager_patrols false
+```
+
+Disabling this rule prevents all wild patrol spawning. Existing patrols are unaffected — only new spawns are blocked. Command Post patrols and raid reinforcements are also unaffected (see `raid_defenses` for those).
+
+## `millager:raid_defenses`
+
+- **Default:** `true`
+- **Category:** Mobs
+- **Effect:** Controls whether Millager reinforcements deploy during village raids
+
+```
+/gamerule millager:raid_defenses false
+```
+
+Disabling this rule prevents all raid reinforcement wave deployment. If disabled mid-raid, the current defense state is cleaned up. Re-enabling has no effect on an ongoing raid.
+
+## Vanilla Dependency
+
+The patrol system also respects the vanilla `doMobSpawning` game rule (`/gamerule doMobSpawning`). If mob spawning is disabled globally, patrols will not spawn regardless of the Millager-specific rule.

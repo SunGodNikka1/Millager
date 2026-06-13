@@ -1,0 +1,45 @@
+# Advancements
+
+Millager adds **9 custom advancements** across two vanilla tabs: **Husbandry** and **Adventure**. Several use custom trigger types unique to the mod.
+
+## Husbandry Tab
+
+```
+Root (minecraft:husbandry/root)
+├── Just a Sip                      ─ brew a bottle of Liquor
+│   └── Local Distillery            ─ brew with all 4 ingredients (goal)
+└── Wondrous Elixir                 ─ drink an Elixir (goal)
+    └── A Cure for the Incurable    ─ cure a NITWIT with Elixir (hidden, challenge)
+```
+
+| Advancement | Frame | Trigger | Description |
+|-------------|-------|---------|-------------|
+| **Just a Sip** | task | `millager:obtain_liquor` | Brew a bottle of Liquor |
+| **Local Distillery** | goal | `millager:brew_liquor` | Brew using wheat, potato, beetroot, and wheat seeds |
+| **Wondrous Elixir** | goal | `minecraft:consume_item` | Drink an Elixir |
+| **A Cure for the Incurable** | challenge | `millager:heal_nitwit` | Cure a NITWIT villager with Elixir |
+
+## Adventure Tab
+
+```
+kill_a_mob (minecraft:adventure/kill_a_mob)
+└── Carpet Bombing                  ─ kill 1+ mobs with TNT on a Stick
+    └── Tactical Strike             ─ kill 6+ mobs at once with TNT on a Stick (challenge)
+
+trade (minecraft:adventure/trade)
+└── Arms Dealer                     ─ trade lethal goods with a Commander (goal)
+
+hero_of_the_village (minecraft:adventure/hero_of_the_village)
+└── War of the Century              ─ win a raid with all reinforcements (hidden, challenge)
+
+totem_of_undying (minecraft:adventure/totem_of_undying)
+└── Multi-Core Healing              ─ have 2+ Totems of Healing in inventory (goal)
+```
+
+| Advancement | Frame | Trigger | Description |
+|-------------|-------|---------|-------------|
+| **Carpet Bombing** | task | `millager:tnt_kill` | Kill a hostile mob with TNT on a Stick |
+| **Tactical Strike** | challenge | `millager:tnt_kill` (min 6) | Kill 6+ hostile mobs at once with one TNT on a Stick |
+| **Arms Dealer** | goal | `minecraft:villager_trade` | Trade lethal goods with a Commander |
+| **War of the Century** | challenge | `millager:grand_battle` | Win a raid with all 11 reinforcement waves deployed |
+| **Multi-Core Healing** | goal | `millager:hold_totems` | Have 2+ Totems of Healing in your inventory |

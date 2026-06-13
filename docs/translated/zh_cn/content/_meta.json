@@ -1,0 +1,14 @@
+{
+  "items": {
+    "name": "物品",
+    "icon": "Sword"
+  },
+  "blocks": {
+    "name": "方块",
+    "icon": "Box"
+  },
+  "entities": {
+    "name": "实体",
+    "icon": "Users"
+  }
+}

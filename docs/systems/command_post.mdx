@@ -1,0 +1,49 @@
+# Command Post
+
+The **Command Post** is a worldgen structure that serves as a Millager outpost. It comes in two variants: intact **Command Post** and ruined **Ruined Command Post**.
+
+## Structure
+
+- Appears in forests, plains, taiga, savannas, deserts, and mountains
+- Built from wood, wool, and stone materials
+- Features a **Sand Table** (Commander job site)
+- Lootable chests with military supplies
+
+## Variants
+
+| Variant | NBT | Biome Condition |
+|---------|-----|-----------------|
+| Classic | `command_post/classic.nbt` | Default |
+| Sand | `command_post/sand.nbt` | Badlands / Desert biomes |
+| Ruined Classic | `command_post/ruined_classic.nbt` | Default (ruined) |
+| Ruined Sand | `command_post/ruined_sand.nbt` | Badlands / Desert (ruined) |
+
+The structure uses `terrain_adaptation: beard_thin` to fill gaps beneath it, preventing floating platforms on uneven terrain.
+
+## Generation
+
+- **Spacing:** 48 chunks
+- **Separation:** 10 chunks
+- **Salt:** 741852963
+- **Biomes:** `#millager:has_structure/command_post` (forests, plains, taiga, savannas, deserts, mountains — excluding pale gardens and ice spikes)
+
+Water bodies are filtered out during generation (checks `WORLD_SURFACE_WG > OCEAN_FLOOR_WG`). The Y-level adapts to terrain, sinking 1–3 blocks into the ground.
+
+## Loot
+
+Command Post chests contain military supplies:
+
+| Item | Notes |
+|------|-------|
+| Coal | Common |
+| Wheat | Common |
+| Iron Nugget | Common |
+| Gunpowder | Uncommon |
+| Iron Ingot | Uncommon |
+| Emerald | Uncommon |
+| Saddle | Rare |
+| Villager Banner Pattern | Rare |
+
+## Explorer Maps
+
+Commander-sold explorer maps can point to Command Post structures via the `#millager:on_outpost_exploder_maps` tag (which also includes `minecraft:pillager_outpost`).

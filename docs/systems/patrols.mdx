@@ -1,0 +1,53 @@
+# Patrol System
+
+Millager patrols spawn naturally in the wilderness, roaming in formation and engaging hostile mobs. Patrols come in two types: **infantry squads** and **cavalry scouts**.
+
+## Spawning
+
+Patrols begin spawning after **3 in-game days** in the Overworld. Spawning follows these rules:
+
+- Random location 24–48 blocks from a non-spectator player
+- Must be **outside village boundaries** (wilderness only)
+- Requires chunks to be fully loaded
+- 25% chance to spawn per timer cycle (~every 15 minutes)
+- 50% chance to be cavalry, 50% infantry
+
+## Infantry Patrols
+
+Infantry squads consist of 5–8 Millagers drawn from the infantry pool:
+
+| Unit | Health | Weight |
+|------|--------|--------|
+| Archer | 24 HP | 30 |
+| Swordmaster | 30 HP | 25 |
+| Mauler | 32 HP | 20 |
+| Rioter | 40 HP | 15 |
+| Doctor | 22 HP | 10 |
+
+Infantry formations are tight — units stay within 2.5 blocks of their leader.
+
+## Cavalry Patrols
+
+Cavalry scouts consist of 4–7 mounted Millagers:
+
+| Unit | Health | Weight |
+|------|--------|--------|
+| Lancer | 28 HP | 60 |
+| Scouter | 26 HP | 40 |
+
+Cavalry formations are looser — units stay within 4.5 blocks of their leader. Cavalry units prefer open terrain and will only navigate to MEETING POI types (village bell squares), avoiding buildings where their larger hitboxes get stuck.
+
+## Patrol Behavior
+
+- Units form a **formation** around the patrol leader (UUID-based)
+- The leader navigates between Points of Interest (POIs)
+- If the leader gets stuck (stall detection) or spins in circles, the patrol resets to a new target
+- Units engage hostile mobs they encounter
+
+## Population Cap
+
+No more than **16 Millagers** within a 48-block radius will spawn from a single patrol event, preventing entity pile-up. Millagers also follow standard mob despawning rules (no persistence).
+
+## Game Rule
+
+Disable patrol spawning: `/gamerule millager:spawn_millager_patrols false`

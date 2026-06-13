@@ -1,0 +1,33 @@
+---
+id: millager:bee_golem
+---
+
+# Bee Golem
+
+A small glass-and-wax construct. Bee Golems function as **self-guided kamikaze drones** — they fly toward enemies and explode on contact.
+
+| Stat | Value |
+|------|-------|
+| Size | 0.55 × 0.45 |
+| Role | Kamikaze Drone |
+
+## Behavior
+
+- Flies toward hostile mobs
+- Explodes on contact or when destroyed
+- Can be **summoned** by:
+  - Using a [Golem Amber](/content/items/golem_amber)
+  - A [Doctor](/content/entities/doctor) deploying one in combat
+- Plays distinct sounds for each damage stage:
+  - **Glass Break** — outer glass shatters
+  - **Wax Break** — wax layer cracks
+  - **Burst Out** — final explosion
+  - **Hurt** — damaged but still functional
+
+## Damage States
+
+The Bee Golem visually degrades through multiple damage states before exploding. Each state has a unique sound cue.
+
+<Callout variant="info">
+Bee Golems are temporary — they cannot be repaired or healed. Once summoned, they will eventually shatter.
+</Callout>
