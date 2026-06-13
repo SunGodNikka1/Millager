@@ -1,15 +1,7 @@
 {
-  "---": {
-    "type": "separator",
-    "name": "内容"
-  },
   "content": {
     "name": "内容",
     "icon": "Package"
-  },
-  "---2": {
-    "type": "separator",
-    "name": "指南"
   },
   "systems": {
     "name": "系统与指南",

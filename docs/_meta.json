@@ -1,15 +1,7 @@
 {
-    "---": {
-        "type": "separator",
-        "name": "Content"
-    },
     "content": {
         "name": "Content",
         "icon": "Package"
-    },
-    "---2": {
-        "type": "separator",
-        "name": "Guides"
     },
     "systems": {
         "name": "Systems & Guides",
