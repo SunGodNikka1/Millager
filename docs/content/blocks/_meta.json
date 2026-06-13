@@ -1,9 +1,9 @@
 {
-  "sand_table": "Sand Table",
-  "totem_infuser": "Totem Infuser",
-  "liquor_cauldron": "Liquor Cauldron",
-  "brewing_cauldron": "Brewing Cauldron",
-  "timed_fire": "Enduring Fire",
-  "villager_head": "Villager Head",
-  "illager_head": "Illager Head"
+  "sand_table.mdx": "Sand Table",
+  "totem_infuser.mdx": "Totem Infuser",
+  "liquor_cauldron.mdx": "Liquor Cauldron",
+  "brewing_cauldron.mdx": "Brewing Cauldron",
+  "timed_fire.mdx": "Enduring Fire",
+  "villager_head.mdx": "Villager Head",
+  "illager_head.mdx": "Illager Head"
 }

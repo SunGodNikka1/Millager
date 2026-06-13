@@ -3,7 +3,7 @@
     "name": "内容",
     "icon": "Package"
   },
-  "systems": {
+  "docs": {
     "name": "系统与指南",
     "icon": "BookOpen"
   }

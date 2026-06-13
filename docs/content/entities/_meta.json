@@ -1,13 +1,13 @@
 {
-  "archer": "Archer",
-  "lancer": "Lancer",
-  "swordmaster": "Swordmaster",
-  "mauler": "Mauler",
-  "rioter": "Rioter",
-  "scouter": "Scouter",
-  "doctor": "Doctor",
-  "bee_golem": "Bee Golem",
-  "explosive_arrow": "Explosive Arrow",
-  "molotov_cocktail": "Molotov Cocktail",
-  "tnt_projectile": "TNT Projectile"
+  "archer.mdx": "Archer",
+  "lancer.mdx": "Lancer",
+  "swordmaster.mdx": "Swordmaster",
+  "mauler.mdx": "Mauler",
+  "rioter.mdx": "Rioter",
+  "scouter.mdx": "Scouter",
+  "doctor.mdx": "Doctor",
+  "bee_golem.mdx": "Bee Golem",
+  "explosive_arrow.mdx": "Explosive Arrow",
+  "molotov_cocktail.mdx": "Molotov Cocktail",
+  "tnt_projectile.mdx": "TNT Projectile"
 }

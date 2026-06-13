@@ -1,10 +1,10 @@
 {
-    "content": {
-        "name": "Content",
-        "icon": "Package"
-    },
-    "systems": {
-        "name": "Systems & Guides",
-        "icon": "BookOpen"
-    }
+  "content": {
+    "name": "Content",
+    "icon": "Package"
+  },
+  "docs": {
+    "name": "Systems & Guides",
+    "icon": "BookOpen"
+  }
 }
