@@ -1,10 +1,4 @@
 {
-  "content": {
-    "name": "内容",
-    "icon": "Package"
-  },
-  "systems": {
-    "name": "系统与指南",
-    "icon": "BookOpen"
-  }
+    ".content": "内容",
+    "systems": "系统与指南"
 }

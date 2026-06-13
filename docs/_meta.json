@@ -1,11 +1,4 @@
 {
-  "content": {
-    "name": "Content",
-    "icon": "Package"
-  },
-  "_homepage.mdx": "",
-  "systems": {
-    "name": "Systems & Guides",
-    "icon": "BookOpen"
-  }
+    ".content": "Content",
+    "systems": "Systems & Guides"
 }
