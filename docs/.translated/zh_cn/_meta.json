@@ -1,11 +1,10 @@
 {
   "content": {
-    "name": "Content",
+    "name": "内容",
     "icon": "Package"
   },
-  "_homepage.mdx": "",
   "systems": {
-    "name": "Systems & Guides",
+    "name": "系统与指南",
     "icon": "BookOpen"
   }
 }
